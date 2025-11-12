@@ -48,6 +48,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JetBrains\PyCharmProjects\ITMO-Optimization_Methods\lab2\images" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.solution">
     <configuration name="simplex_method" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ITMO-Optimization_Methods" />
