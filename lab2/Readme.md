@@ -206,7 +206,7 @@ def plot_results(f, a, b, result, func_str, fname_png="result_plot.png"):
 
 Для демонстрации работы программы использовалась одномерная функция Растригина:
 
-$$f(x)=10 + x^2 - 10\times\cos(2\pi x)$$,
+$$f(x)=10 + x^2 - 10\cdot\cos(2\pi x)$$,
 
 На интервале $$[-5.12, 5.12]$$ при точности $$\varepsilon = 0.01$$.
 
