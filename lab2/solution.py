@@ -173,30 +173,30 @@ def make_txt_report(f, func_str, a, b, eps, result, txt_file="result.txt"):
 
 
 if __name__ == "__main__":
-    func_input = "10 + x**2 - 10*cos(2*pi*x)"  # Функция Растригина (1D)
-    f, func_str = make_function_from_string(func_input)
-    a, b = -5.12, 5.12
-    eps = 0.01
-
-    # print("Введите одномерную функцию f(x), например: f(x) = x + sin(3.14159*x)")
-    # func_input = input("f(x) = ").strip()
-    # if not func_input:
-    #     func_input = "x + sin(3.14159*x)"  # значение по умолчанию
-    #
+    # func_input = "10 + x**2 - 10*cos(2*pi*x)"  # Функция Растригина (1D)
     # f, func_str = make_function_from_string(func_input)
-    #
-    # try:
-    #     a = float(input("Введите левую границу отрезка a: "))
-    #     b = float(input("Введите правую границу отрезка b: "))
-    # except ValueError:
-    #     print("Ошибка ввода, используются значения по умолчанию a=-5, b=5")
-    #     a, b = -5.0, 5.0
-    #
-    # try:
-    #     eps = float(input("Введите точность eps: "))
-    # except ValueError:
-    #     print("Ошибка ввода, используется значение по умолчанию eps=0.01")
-    #     eps = 0.01
+    # a, b = -5.12, 5.12
+    # eps = 0.01
+
+    print("Введите одномерную функцию f(x), например: f(x) = x + sin(3.14159*x)")
+    func_input = input("f(x) = ").strip()
+    if not func_input:
+        func_input = "x + sin(3.14159*x)"  # значение по умолчанию
+
+    f, func_str = make_function_from_string(func_input)
+
+    try:
+        a = float(input("Введите левую границу отрезка a: "))
+        b = float(input("Введите правую границу отрезка b: "))
+    except ValueError:
+        print("Ошибка ввода, используются значения по умолчанию a=-5, b=5")
+        a, b = -5.0, 5.0
+
+    try:
+        eps = float(input("Введите точность eps: "))
+    except ValueError:
+        print("Ошибка ввода, используется значение по умолчанию eps=0.01")
+        eps = 0.01
 
     L_est = estimate_L(f, a, b, n=2000)
     res = piyavskii_shubert(f, a, b, eps=eps, L=L_est, max_iters=2000)
