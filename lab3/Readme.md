@@ -78,7 +78,7 @@ $$
 $$
 
 Из двух нижних строк системы выразим $x$ и $y$:
-$$ x = 2y \Rightarrow 2y + y - 1 = 0 \Rightarrow y = \frac{1}{3}; \space x = \frac{2}{3}$$
+$$x = 2y \Rightarrow 2y + y - 1 = 0 \Rightarrow y = \frac{1}{3}; \space x = \frac{2}{3}$$
 
 Подставив найденные значения $x$ и $y$ подставим их в два первых уравнения, чтоб найти $\lambda_1$
 и $\lambda_2$:
