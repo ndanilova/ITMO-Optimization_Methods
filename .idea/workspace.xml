@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79d1b851-cc37-4360-bf80-8d47b1f28806" name="Changes" comment="changed lab2/report">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab4/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/solutuon.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/solutuon.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +51,7 @@
     "Python.solution (1).executor": "Run",
     "Python.solution.executor": "Run",
     "Python.solution2.executor": "Run",
+    "Python.solutuon (1).executor": "Run",
     "Python.solutuon3.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -73,30 +76,7 @@
       <recent name="D:\JetBrains\PyCharmProjects\ITMO-Optimization_Methods\lab3\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.solution2">
-    <configuration name="simplex_method" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="ITMO-Optimization_Methods" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab1/simplex_method.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.solutuon (1)">
     <configuration name="solution (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ITMO-Optimization_Methods" />
       <option name="ENV_FILES" value="" />
@@ -166,6 +146,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="solutuon (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ITMO-Optimization_Methods" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab4" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab4/solutuon.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="solutuon" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ITMO-Optimization_Methods" />
       <option name="ENV_FILES" value="" />
@@ -191,11 +194,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.solutuon (1)" />
         <item itemvalue="Python.solution2" />
         <item itemvalue="Python.solutuon3" />
         <item itemvalue="Python.solution (1)" />
         <item itemvalue="Python.solution" />
-        <item itemvalue="Python.simplex_method" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +222,7 @@
       <workItem from="1764012489307" duration="6706000" />
       <workItem from="1764073599430" duration="2648000" />
       <workItem from="1764675671550" duration="7000" />
-      <workItem from="1765202952864" duration="15819000" />
+      <workItem from="1765202952864" duration="16367000" />
     </task>
     <task id="LOCAL-00001" summary="changed lab2/report">
       <option name="closed" value="true" />
@@ -267,6 +270,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="changed lab2/report" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ITMO_Optimization_Methods$solutuon__1_.coverage" NAME="solutuon (1) Coverage Results" MODIFIED="1765879182579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab4" />
     <SUITE FILE_PATH="coverage/ITMO_Optimization_Methods$solution__1_.coverage" NAME="solution (1) Coverage Results" MODIFIED="1765232801752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab4" />
     <SUITE FILE_PATH="coverage/ITMO_Optimization_Methods$solutuon3.coverage" NAME="solutuon3 Coverage Results" MODIFIED="1765236734560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab4" />
     <SUITE FILE_PATH="coverage/ITMO_Optimization_Methods$simplex_method.coverage" NAME="simplex_method Coverage Results" MODIFIED="1764073701392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1" />
