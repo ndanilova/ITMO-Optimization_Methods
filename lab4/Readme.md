@@ -219,8 +219,8 @@ $$F_3(x_1, x_2, d, c) = \sum_{j \in J} p_j^3 \left[ x_1 \cdot r_{1j}^3 + x_2 \cd
    - text{best_action} = u
 
 5. **Сохранение результатов:**
-   - $F_k(S)$ = \text{best_value}
-   - $\text{policy}[k][S]$ = \text{best_action}
+   - $$F_k(S)$$ = \text{best_value}
+   - $$\text{policy}[k][S]$$ = \text{best_action}
 
 В коде этот процесс реализован через вложенные циклы:
 ```python
