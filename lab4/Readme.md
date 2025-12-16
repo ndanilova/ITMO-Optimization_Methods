@@ -171,19 +171,29 @@ best_value = $-\infty$
 best_action = (0,0,0)
 
 ДЛЯ каждого допустимого управления (\Delta_1,\Delta_3,\Delta_d): 
+
         // Проверка ограничений 
+
         ЕСЛИ новые значения ≥ minimal И новый cash ≥ 0: 
+
           expected = 0 
+
           ДЛЯ каждой ситуации j: 
+
             // Новое состояние после ситуации 
+
             new_state = применить_множители(...) 
+
             expected += $p_j^k$ $\times$ F[k+1][new_state] 
           
           ЕСЛИ expected > best_value: 
+
             best_value = expected 
+
             best_action = $(\Delta_1,\Delta_2,\Delta_d)$ 
       
       F[k][state] = best_value 
+
       policy[k][state] = best_action
 
 4. Восстановление траектории
