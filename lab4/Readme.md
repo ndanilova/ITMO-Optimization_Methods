@@ -219,8 +219,8 @@ $$F_3(x_1, x_2, d, c) = \sum_{j \in J} p_j^3 \left[ x_1 \cdot r_{1j}^3 + x_2 \cd
    - text{best_action} = u
 
 5. **Сохранение результатов:**
-   - $F_k(S) = \text{best_value}$
-   - $\text{policy}[k][S] = \text{best_action}$
+   - $F_k(S)$ = \text{best_value}
+   - $\text{policy}[k][S]$ = \text{best_action}
 
 В коде этот процесс реализован через вложенные циклы:
 ```python
@@ -236,12 +236,12 @@ for buy in range(0, initial['cash'], step):
 
 После завершения обратного прохода:
 1. Из начального состояния $S_0$ извлекается оптимальное значение:
-   $$\text{optimal_value} = F_1(S_0)$$
+   \text{optimal_value} = $F_1(S_0)$
 
 2. Выполняется прямой проход для получения конкретных действий:
-   - Для $k = 1$: $u_1^* = \text{policy}[1][S_0]$
+   - Для $k = 1$: $u_1^*$ = \text{policy}[1][S_0]
    - Применяем $u_1^*$, получаем $S_1$ (с учётом случайности)
-   - Для $k = 2$: $u_2^* = \text{policy}[2][S_1]$
+   - Для $k = 2$: $u_2^*$ = \text{policy}[2][S_1]
 
 **Критерий оптимальности**
 
