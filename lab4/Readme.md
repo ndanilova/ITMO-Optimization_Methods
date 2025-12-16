@@ -77,10 +77,12 @@ $F(x_N)$ — терминальная функция выигрыша
 
 ##### 2.2. Рекуррентное соотношение Беллмана:
 
+$$
 \begin{equation}
 F_N(x_N) = Φ(x_N)  (терминальное условие)
 F_k(x_k) = max_{u_k \in U_k} E[F_{k+1}(x_{k+1})], k = N-1,...,1
 \end{equation}
+$$
 
 **Обратный проход:**
 
@@ -112,7 +114,9 @@ F_k(x_k) = max_{u_k \in U_k} E[F_{k+1}(x_{k+1})], k = N-1,...,1
 
 **Рекуррентные соотношения Беллмана:**
 
+$$
 \begin{equation}
+\begin{aligned}
 F_3(x_1, x_2, d, c) = \sum_{j} p_j^3 [x_1\cdot r_{1j}^3 + x_2·r_{2j}^3 + d\cdot r_{dj}^3 + c]
 
 F_k(x_1, x_2, d, c) = max_{(\Delta_1,\Delta_2,\Delta_d)\in U} \sum_{j} p_j^k F_{k+1}(
@@ -121,7 +125,9 @@ F_k(x_1, x_2, d, c) = max_{(\Delta_1,\Delta_2,\Delta_d)\in U} \sum_{j} p_j^k F_{
 (d+\Delta_d)\cdot r_{dj}^k,
 c - (\Delta_1+\Delta_2+\Delta_d) - comm(\Delta)
 ), k = 1,2
+\end{aligned}
 \end{equation}
+$$
 
 ##### 2.4. Псевдокод алгоритма:
 
