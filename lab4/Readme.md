@@ -117,12 +117,12 @@ $$
 $$
 \begin{equation}
 \begin{aligned}
-F_3(x_1, x_2, d, c) = \sum_{j} p_j^3 [x_1\cdot r_{1j}^3 + x_2·r_{2j}^3 + d\cdot r_{dj}^3 + c]
-F_k(x_1, x_2, d, c) = max_{(\Delta_1,\Delta_2,\Delta_d)\in U} \sum_{j} p_j^k F_{k+1}(
-(x_1+\Delta_1)\cdot r_{1j}^k,
-(x_2+\Delta_2)\cdot r_{2j}^k,
-(d+\Delta_d)\cdot r_{dj}^k,
-c - (\Delta_1+\Delta_2+\Delta_d) - comm(\Delta)
+F_3(x_1, x_2, d, c) = \sum_{j} p_j^3 [x_1\cdot r_{1j}^3 + x_2·r_{2j}^3 + d\cdot r_{dj}^3 + c] \\
+F_k(x_1, x_2, d, c) = max_{(\Delta_1,\Delta_2,\Delta_d)\in U} \sum_{j} p_j^k F_{k+1}( \\
+(x_1+\Delta_1)\cdot r_{1j}^k, \\
+(x_2+\Delta_2)\cdot r_{2j}^k, \\
+(d+\Delta_d)\cdot r_{dj}^k, \\
+c - (\Delta_1+\Delta_2+\Delta_d) - comm(\Delta) \\
 ), k = 1,2
 \end{aligned}
 \end{equation}
