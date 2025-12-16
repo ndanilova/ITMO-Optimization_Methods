@@ -211,10 +211,10 @@ $$F_3(x_1, x_2, d, c) = \sum_{j \in J} p_j^3 \left[ x_1 \cdot r_{1j}^3 + x_2 \cd
    $$\text{expected} = \sum_{j \in J} p_j^k \cdot F_{k+1}(S')$$
    
    где новое состояние после случайного события:
-   $$S' = \left( (x_1 + \Delta_1) \cdot r_{1j}^k, (x_2 + \Delta_2) \cdot r_{2j}^k, (d + \Delta_d) \cdot r_{dj}^k, c - \Sigma\Delta - \text{comm}(u) \right)$$
+   $$S = \left ((x_1 + \Delta_1) \cdot r_{1j}^k, (x_2 + \Delta_2) \cdot r_{2j}^k, (d + \Delta_d) \cdot r_{dj}^k, c - \Sigma\Delta - \text{comm}(u) \right)$$
 
 4. **Выбор оптимального управления:**
-   Если text{expected} > text{best_value}, то:
+   Если text{expected} > \text{best_value}, то:
    - text{best_value} = text{expected}
    - text{best_action} = u
 
