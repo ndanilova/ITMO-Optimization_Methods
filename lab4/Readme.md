@@ -130,7 +130,7 @@ $$
 
 ##### 2.4. Псевдокод алгоритма:
 
-````markdown
+---
 АЛГОРИТМ: Оптимальное управление инвестициями 
 
 ВХОД: 
@@ -151,42 +151,42 @@ optimal_policy — оптимальная стратегия
 
 // 2. Терминальный этап (k=3) 
 ДЛЯ каждого состояния (x_1, x_2, d, c): 
-```latex
-$F[3][...] = \sum p_j^3 [x_1\cdot r_{1j}^3 + x_2 \cdot r_{2j}^3 + d\cdot r_{dj}^3 + c]$ \\
-```
 
-// 3. Обратный проход (k=2,1) \\
-ДЛЯ k = 2,1: \\
-ДЛЯ каждого состояния: \\
-best_value = $-\inf$ \\
-best_action = (0,0,0) \\
+$F[3][...] = \sum p_j^3 [x_1\cdot r_{1j}^3 + x_2 \cdot r_{2j}^3 + d\cdot r_{dj}^3 + c]$ 
 
-      ДЛЯ каждого допустимого управления (\Delta_1,\Delta_3,\Delta_d): \\
-        // Проверка ограничений \\
-        ЕСЛИ новые значения ≥ minimal И новый cash ≥ 0: \\
-          expected = 0 \\
-          ДЛЯ каждой ситуации j: \\
-            // Новое состояние после ситуации \\
-            new_state = применить_множители(...) \\
-            expected += $p_j^k$ $\times$ F[k+1][new_state] \\
+
+// 3. Обратный проход (k=2,1) 
+ДЛЯ k = 2,1: 
+ДЛЯ каждого состояния: 
+best_value = $-\inf$ 
+best_action = (0,0,0) 
+
+      ДЛЯ каждого допустимого управления (\Delta_1,\Delta_3,\Delta_d): 
+        // Проверка ограничений 
+        ЕСЛИ новые значения ≥ minimal И новый cash ≥ 0: 
+          expected = 0 
+          ДЛЯ каждой ситуации j: 
+            // Новое состояние после ситуации 
+            new_state = применить_множители(...) 
+            expected += $p_j^k$ $\times$ F[k+1][new_state] 
           
-          ЕСЛИ expected > best_value: \\
-            best_value = expected \\
-            best_action = $(\Delta_1,\Delta_2,\Delta_d)$ \\
+          ЕСЛИ expected > best_value: 
+            best_value = expected 
+            best_action = $(\Delta_1,\Delta_2,\Delta_d)$ 
       
-      F[k][state] = best_value \\
-      policy[k][state] = best_action \\
+      F[k][state] = best_value 
+      policy[k][state] = best_action 
 
-// 4. Восстановление траектории \\
-trajectory = [] \\
-current_state = начальное_состояние \\
-ДЛЯ k = 1,2: \\
-action = policy[k][current_state] \\
-trajectory.append(action) \\
-current_state = применить_управление(current_state, action) \\
+// 4. Восстановление траектории 
+trajectory = [] 
+current_state = начальное_состояние 
+ДЛЯ k = 1,2: 
+action = policy[k][current_state] 
+trajectory.append(action) 
+current_state = применить_управление(current_state, action) 
 
 ВЕРНУТЬ F[1][начальное], trajectory
-````
+---
 
 ##### 2.5. Диаграмма классов программы
 
