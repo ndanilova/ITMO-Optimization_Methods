@@ -194,7 +194,7 @@ $$F_3(x_1, x_2, d, c) = \sum_{j \in J} p_j^3 \left[ x_1 \cdot r_{1j}^3 + x_2 \cd
 **Для $k = 2, 1$:**
 
 1. **Для каждого дискретного состояния $S = (x_1, x_2, d, c)$:**
-   - Инициализация: $\text{best\_value} = -\infty$, $\text{best\_action} = (0, 0, 0)$
+   - Инициализация: $\text{best_value} = -\infty$, $\text{best_action} = (0, 0, 0)$
 
 2. **Перебор допустимых управлений:**
    Управление имеет вид $u = (\Delta_1, \Delta_2, \Delta_d)$, где каждое $\Delta_i$ кратно 25.
@@ -211,16 +211,16 @@ $$F_3(x_1, x_2, d, c) = \sum_{j \in J} p_j^3 \left[ x_1 \cdot r_{1j}^3 + x_2 \cd
    $$\text{expected} = \sum_{j \in J} p_j^k \cdot F_{k+1}(S')$$
    
    где новое состояние после случайного события:
-   $$S' = \left( (x_1 + \Delta_1) \cdot r_{1j}^k,\ (x_2 + \Delta_2) \cdot r_{2j}^k,\ (d + \Delta_d) \cdot r_{dj}^k,\ c - \Sigma\Delta - \text{comm}(u) \right)$$
+   $$S' = \left( (x_1 + \Delta_1) \cdot r_{1j}^k, (x_2 + \Delta_2) \cdot r_{2j}^k, (d + \Delta_d) \cdot r_{dj}^k, c - \Sigma\Delta - \text{comm}(u) \right)$$
 
 4. **Выбор оптимального управления:**
-   Если $\text{expected} > \text{best\_value}$, то:
-   - $\text{best\_value} = \text{expected}$
-   - $\text{best\_action} = u$
+   Если $\text{expected} > \text{best_value}$, то:
+   - $\text{best_value} = \text{expected}$
+   - $\text{best_action} = u$
 
 5. **Сохранение результатов:**
-   - $F_k(S) = \text{best\_value}$
-   - $\text{policy}[k][S] = \text{best\_action}$
+   - $F_k(S) = \text{best_value}$
+   - $\text{policy}[k][S] = \text{best_action}$
 
 В коде этот процесс реализован через вложенные циклы:
 ```python
@@ -236,7 +236,7 @@ for buy in range(0, initial['cash'], step):
 
 После завершения обратного прохода:
 1. Из начального состояния $S_0$ извлекается оптимальное значение:
-   $$\text{optimal\_value} = F_1(S_0)$$
+   $$\text{optimal_value} = F_1(S_0)$$
 
 2. Выполняется прямой проход для получения конкретных действий:
    - Для $k = 1$: $u_1^* = \text{policy}[1][S_0]$

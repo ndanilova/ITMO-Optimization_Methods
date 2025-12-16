@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79d1b851-cc37-4360-bf80-8d47b1f28806" name="Changes" comment="changed lab2/report">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab4/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/solutuon.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/solutuon.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +220,7 @@
       <workItem from="1764012489307" duration="6706000" />
       <workItem from="1764073599430" duration="2648000" />
       <workItem from="1764675671550" duration="7000" />
-      <workItem from="1765202952864" duration="16367000" />
+      <workItem from="1765202952864" duration="16669000" />
     </task>
     <task id="LOCAL-00001" summary="changed lab2/report">
       <option name="closed" value="true" />
