@@ -48,11 +48,13 @@
 $$
 \begin{equation}
 \begin{aligned}
-max_{u_1,...,u_N} E[F(x_N)] 
-при условиях: 
+max_{u_1,...,u_N} E[F(x_N)]
 \end{aligned}
 \end{equation}
 $$
+
+при условиях: 
+
 $$
 \begin{equation}
 \begin{aligned}
