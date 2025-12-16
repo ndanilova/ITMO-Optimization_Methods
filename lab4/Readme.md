@@ -47,8 +47,12 @@
 
 \begin{equation}
 \begin{aligned}
-max_{u_1,...,u_N} E[F(x_N)] \\
-при условиях: \\
+max_{u_1,...,u_N} E[F(x_N)] 
+при условиях: 
+\end{aligned}
+\end{equation}
+\begin{equation}
+\begin{aligned}
 x_{k+1} = f_k(x_k, u_k, \xi_k), k = 1,...,N-1 \\
 u_k ∈ U_k(x_k) \\
 x_k ∈ X_k 
