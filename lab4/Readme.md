@@ -167,10 +167,10 @@ $F[3][...] = \sum p_j^3 [x_1\cdot r_{1j}^3 + x_2 \cdot r_{2j}^3 + d\cdot r_{dj}^
 
 ДЛЯ k = 2,1:
 ДЛЯ каждого состояния:
-best_value = $-\inf$
+best_value = $-\infty$
 best_action = (0,0,0)
 
-      ДЛЯ каждого допустимого управления (\Delta_1,\Delta_3,\Delta_d): 
+ДЛЯ каждого допустимого управления (\Delta_1,\Delta_3,\Delta_d): 
         // Проверка ограничений 
         ЕСЛИ новые значения ≥ minimal И новый cash ≥ 0: 
           expected = 0 
@@ -184,7 +184,7 @@ best_action = (0,0,0)
             best_action = $(\Delta_1,\Delta_2,\Delta_d)$ 
       
       F[k][state] = best_value 
-      policy[k][state] = best_action 
+      policy[k][state] = best_action
 
 4. Восстановление траектории
 
@@ -196,6 +196,7 @@ trajectory.append(action)
 current_state = применить_управление(current_state, action)
 
 ВЕРНУТЬ F[1][начальное], trajectory
+
 ---
 
 ##### 2.5. Диаграмма классов программы
